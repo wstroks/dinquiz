@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://codigo/consumo/1/feed.gd" type="Script" id=1]
+[ext_resource path="res://img/feed.png" type="Texture" id=2]
+[ext_resource path="res://img/seguir.png" type="Texture" id=3]
+[ext_resource path="res://clarendon-black-bt.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 543.342
+margin_top = 653.963
+margin_right = 924.342
+margin_bottom = 735.963
+texture_normal = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 816.45
+margin_top = 247.197
+margin_right = 1065.45
+margin_bottom = 410.197
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

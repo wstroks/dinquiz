@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://img/tela_principal.png" type="Texture" id=2]
+[ext_resource path="res://img/sair.png" type="Texture" id=3]
+[ext_resource path="res://img/jogar.png" type="Texture" id=4]
+[ext_resource path="res://img/sobre.png" type="Texture" id=5]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -3.25342
+margin_top = -3.25354
+margin_right = 1422.75
+margin_bottom = 786.746
+texture = ExtResource( 2 )
+
+[node name="sair" type="TextureButton" parent="."]
+margin_left = 922.462
+margin_top = 511.216
+margin_right = 1303.46
+margin_bottom = 593.216
+texture_normal = ExtResource( 3 )
+
+[node name="jogar" type="TextureButton" parent="."]
+margin_left = 949.727
+margin_top = 213.575
+margin_right = 1329.73
+margin_bottom = 296.575
+texture_normal = ExtResource( 4 )
+
+[node name="sobre" type="TextureButton" parent="."]
+margin_left = 942.91
+margin_top = 361.26
+margin_right = 1322.91
+margin_bottom = 443.26
+texture_normal = ExtResource( 5 )
+[connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="jogar" to="." method="_on_jogar_pressed"]

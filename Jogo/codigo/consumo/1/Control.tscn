@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://codigo/consumo/1/Control.gd" type="Script" id=1]
+[ext_resource path="res://img/tela_1.png" type="Texture" id=2]
+[ext_resource path="res://img/1.png" type="Texture" id=3]
+[ext_resource path="res://img/2.png" type="Texture" id=4]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+
+[node name="guardar" type="TextureButton" parent="."]
+margin_left = 787.358
+margin_top = 309.087
+margin_right = 1241.36
+margin_bottom = 701.087
+texture_normal = ExtResource( 3 )
+
+[node name="nao" type="TextureButton" parent="."]
+margin_left = 211.481
+margin_top = 309.087
+margin_right = 665.481
+margin_bottom = 701.087
+texture_normal = ExtResource( 4 )
+[connection signal="pressed" from="guardar" to="." method="_on_guardar_pressed"]
+[connection signal="pressed" from="nao" to="." method="_on_nao_pressed"]

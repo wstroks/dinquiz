@@ -15,8 +15,18 @@ _global_script_class_icons={
 
 [application]
 
-config/name="dinquiz"
-config/icon="res://icon.png"
+config/name="Dinquiz"
+run/main_scene="res://main.tscn"
+config/icon="res://img/din.png"
+
+[autoload]
+
+new_script="*res://codigo/new_script.gd"
+
+[display]
+
+window/size/width=1420
+window/size/height=785
 
 [rendering]
 
