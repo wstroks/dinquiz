@@ -1,0 +1,159 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://din/feed.gd" type="Script" id=1]
+[ext_resource path="res://img/img22/agagsags.png" type="Texture" id=2]
+[ext_resource path="res://img/seguir.png" type="Texture" id=3]
+[ext_resource path="res://clarendon-black-bt.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://img/img22/q.png" type="Texture" id=5]
+[ext_resource path="res://img/img22/r.png" type="Texture" id=6]
+[ext_resource path="res://img/img22/w.png" type="Texture" id=7]
+[ext_resource path="res://img/img22/e.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 543.342
+margin_top = 653.963
+margin_right = 924.342
+margin_bottom = 735.963
+texture_normal = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 881.071
+margin_top = 497.523
+margin_right = 1065.07
+margin_bottom = 627.523
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 640.308
+margin_top = 491.016
+margin_right = 824.308
+margin_bottom = 621.016
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 383.278
+margin_top = 500.777
+margin_right = 567.278
+margin_bottom = 630.777
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="1" type="TextureButton" parent="."]
+visible = false
+margin_left = 351.151
+margin_top = 244.394
+margin_right = 605.151
+margin_bottom = 463.394
+texture_normal = ExtResource( 5 )
+
+[node name="2" type="TextureButton" parent="."]
+visible = false
+margin_left = 761.33
+margin_top = 250.523
+margin_right = 1014.33
+margin_bottom = 468.523
+texture_normal = ExtResource( 6 )
+
+[node name="3" type="TextureButton" parent="."]
+visible = false
+margin_left = 351.112
+margin_top = 501.042
+margin_right = 604.112
+margin_bottom = 720.042
+texture_normal = ExtResource( 7 )
+
+[node name="4" type="TextureButton" parent="."]
+visible = false
+margin_left = 764.312
+margin_top = 491.282
+margin_right = 1017.31
+margin_bottom = 710.282
+texture_normal = ExtResource( 8 )
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 1095.8
+margin_top = 263.268
+margin_right = 1279.8
+margin_bottom = 393.268
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 178.305
+margin_top = 604.89
+margin_right = 362.305
+margin_bottom = 734.89
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 175.051
+margin_top = 263.268
+margin_right = 359.051
+margin_bottom = 393.268
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="4" to="." method="_on_4_pressed"]

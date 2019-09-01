@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://din/Control.gd" type="Script" id=1]
+[ext_resource path="res://img/img22/p1.png" type="Texture" id=2]
+[ext_resource path="res://img/img22/4.png" type="Texture" id=3]
+[ext_resource path="res://img/img22/6.png" type="Texture" id=4]
+[ext_resource path="res://img/img22/9.png" type="Texture" id=5]
+[ext_resource path="res://img/img22/7.png" type="Texture" id=6]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+
+[node name="guardar" type="TextureButton" parent="."]
+margin_left = 1086.33
+margin_top = 309.0
+margin_right = 1292.33
+margin_bottom = 487.0
+texture_normal = ExtResource( 3 )
+
+[node name="nao" type="TextureButton" parent="."]
+margin_left = 738.074
+margin_top = 315.507
+margin_right = 944.074
+margin_bottom = 493.507
+texture_normal = ExtResource( 4 )
+
+[node name="x1" type="TextureButton" parent="."]
+margin_left = 1099.7
+margin_top = 536.835
+margin_right = 1305.7
+margin_bottom = 714.835
+texture_normal = ExtResource( 5 )
+
+[node name="x2" type="TextureButton" parent="."]
+margin_left = 748.315
+margin_top = 546.596
+margin_right = 954.315
+margin_bottom = 725.596
+texture_normal = ExtResource( 6 )
+[connection signal="pressed" from="guardar" to="." method="_on_guardar_pressed"]
+[connection signal="pressed" from="nao" to="." method="_on_nao_pressed"]
+[connection signal="pressed" from="x1" to="." method="_on_x1_pressed"]
+[connection signal="pressed" from="x2" to="." method="_on_x2_pressed"]
