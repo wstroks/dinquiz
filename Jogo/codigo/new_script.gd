@@ -21,7 +21,8 @@ func reinicia():
 	doar=0
 	gasto=0
 	
-
+func reiniciad():
+	din=0
 func acertos(var a):
 	acertos+=a
 	print(acertos)

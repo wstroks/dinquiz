@@ -4,11 +4,16 @@ extends Control
 # var a = 2
 # var b = "text"
 var a=0
+var conta=0
 # Called when the node enters the scene tree for the first time.
 func _ready():
-
+    
 	a=new_script._getdin()
-	$Label.set_text(str(a))
+	if(a==0):
+		$Label.set_text("68")
+	else:
+		conta=68-a
+		$Label.set_text(str(conta))
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
