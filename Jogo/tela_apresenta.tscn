@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://tela_apresenta.gd" type="Script" id=1]
 [ext_resource path="res://img/tela.png" type="Texture" id=2]
 [ext_resource path="res://img/consumo.png" type="Texture" id=3]
 [ext_resource path="res://img/voltar.png" type="Texture" id=4]
 [ext_resource path="res://img/tela_poupa.png" type="Texture" id=5]
+[ext_resource path="res://img/aplicar.png" type="Texture" id=6]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -17,10 +18,10 @@ margin_bottom = 40.0
 texture = ExtResource( 2 )
 
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 325.355
-margin_top = 335.115
-margin_right = 1086.35
-margin_bottom = 624.115
+margin_left = 26.0288
+margin_top = 348.129
+margin_right = 787.029
+margin_bottom = 637.129
 texture_normal = ExtResource( 3 )
 
 [node name="TextureButton2" type="TextureButton" parent="."]
@@ -31,11 +32,19 @@ margin_bottom = 752.23
 texture_normal = ExtResource( 4 )
 
 [node name="2" type="TextureButton" parent="."]
-margin_left = 315.594
-margin_top = 9.76062
-margin_right = 1029.59
-margin_bottom = 315.761
+margin_left = 26.0284
+margin_top = 32.5355
+margin_right = 740.028
+margin_bottom = 338.536
 texture_normal = ExtResource( 5 )
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+margin_left = 771.0
+margin_top = 163.0
+margin_right = 1485.0
+margin_bottom = 470.0
+texture_normal = ExtResource( 6 )
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]
 [connection signal="pressed" from="2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_TextureButton3_pressed"]

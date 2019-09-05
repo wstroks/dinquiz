@@ -6,7 +6,7 @@
 [ext_resource path="res://clarendon-black-bt.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 30
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 4 )
 
@@ -28,9 +28,9 @@ margin_bottom = 735.963
 texture_normal = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 816.45
+margin_left = 819.704
 margin_top = 247.197
-margin_right = 1065.45
+margin_right = 1068.7
 margin_bottom = 410.197
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )

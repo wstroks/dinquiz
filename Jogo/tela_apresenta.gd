@@ -27,3 +27,9 @@ func _on_2_pressed():
 	get_tree().change_scene("res://din/Control.tscn")
 	
 	pass # Replace with function body.
+
+
+func _on_TextureButton3_pressed():
+	get_tree().change_scene("res://codigo/consumo/2/asas.tscn")
+	
+	pass # Replace with function body.
