@@ -10,7 +10,7 @@ func _ready():
     
 	a=new_script._getdin()
 	if(a==0):
-		$Label.set_text("68")
+		$Label.set_text("0")
 	else:
 		conta=68-a
 		$Label.set_text(str(conta))
